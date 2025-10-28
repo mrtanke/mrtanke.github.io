@@ -1,5 +1,5 @@
 ---
-date: '2025-10-24T13:58:55+02:00'
+date: '2025-10-20T13:58:55+02:00'
 draft: false
 title: 'Chain-of-Thought Prompting'
 description: 'Paper-reading notes: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models'

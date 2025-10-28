@@ -1,6 +1,6 @@
 ---
 title: 'Attention is All You Need'
-date: 2025-10-25T00:36:58+00:00
+date: 2025-10-01T00:36:58+00:00
 draft: false
 description: 'Paper-reading notes: Attention is All You Need'
 ShowWordCount: true

@@ -6,28 +6,21 @@
     <description>Recent content in Posts on Home</description>
     <generator>Hugo -- 0.152.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Oct 2025 22:50:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Oct 2025 13:18:30 +0000</lastBuildDate>
     <atom:link href="https://my-blog-alpha-vert.vercel.app/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>RWKV</title>
+      <title>xLSTM: Extended Long Short-Term Memory</title>
+      <link>https://my-blog-alpha-vert.vercel.app/posts/xlstm_extended_long_short-term_memory/</link>
+      <pubDate>Tue, 28 Oct 2025 13:18:30 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/posts/xlstm_extended_long_short-term_memory/</guid>
+      <description>Paper-reading notes: xLSTM Extended Long Short-Term Memory</description>
+    </item>
+    <item>
+      <title>RWKV: Reinventing RNNs for the Transformer Era</title>
       <link>https://my-blog-alpha-vert.vercel.app/posts/rwkv/</link>
       <pubDate>Mon, 27 Oct 2025 22:50:43 +0000</pubDate>
       <guid>https://my-blog-alpha-vert.vercel.app/posts/rwkv/</guid>
-      <description>Paper-reading notes: RWKV</description>
-    </item>
-    <item>
-      <title>Attention is All You Need</title>
-      <link>https://my-blog-alpha-vert.vercel.app/posts/attention_is_all_you_need/</link>
-      <pubDate>Sat, 25 Oct 2025 00:36:58 +0000</pubDate>
-      <guid>https://my-blog-alpha-vert.vercel.app/posts/attention_is_all_you_need/</guid>
-      <description>Paper-reading notes: Attention is All You Need</description>
-    </item>
-    <item>
-      <title>Chain-of-Thought Prompting</title>
-      <link>https://my-blog-alpha-vert.vercel.app/posts/chain-of-thought-prompting/</link>
-      <pubDate>Fri, 24 Oct 2025 13:58:55 +0200</pubDate>
-      <guid>https://my-blog-alpha-vert.vercel.app/posts/chain-of-thought-prompting/</guid>
-      <description>Paper-reading notes: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</description>
+      <description>Paper-reading notes: RWKV: Reinventing RNNs for the Transformer Era</description>
     </item>
     <item>
       <title>Mastering the game of Go with MCTS and Deep Neural Networks</title>
@@ -35,6 +28,20 @@
       <pubDate>Fri, 24 Oct 2025 10:00:00 +0000</pubDate>
       <guid>https://my-blog-alpha-vert.vercel.app/posts/mastering-go-mcts/</guid>
       <description>Paper-reading notes: Mastering the game of Go with deep</description>
+    </item>
+    <item>
+      <title>Chain-of-Thought Prompting</title>
+      <link>https://my-blog-alpha-vert.vercel.app/posts/chain-of-thought-prompting/</link>
+      <pubDate>Mon, 20 Oct 2025 13:58:55 +0200</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/posts/chain-of-thought-prompting/</guid>
+      <description>Paper-reading notes: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</description>
+    </item>
+    <item>
+      <title>Attention is All You Need</title>
+      <link>https://my-blog-alpha-vert.vercel.app/posts/attention_is_all_you_need/</link>
+      <pubDate>Wed, 01 Oct 2025 00:36:58 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/posts/attention_is_all_you_need/</guid>
+      <description>Paper-reading notes: Attention is All You Need</description>
     </item>
   </channel>
 </rss>

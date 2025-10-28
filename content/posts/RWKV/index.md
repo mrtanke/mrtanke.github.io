@@ -1,8 +1,8 @@
 ---
-title: 'RWKV'
+title: 'RWKV: Reinventing RNNs for the Transformer Era'
 date: 2025-10-27T22:50:43+00:00
 draft: false
-description: 'Paper-reading notes: RWKV'
+description: 'Paper-reading notes: RWKV: Reinventing RNNs for the Transformer Era'
 ShowWordCount: true
 ShowReadingTime: false
 ---
