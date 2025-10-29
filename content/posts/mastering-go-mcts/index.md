@@ -172,7 +172,7 @@ It’s simple but inefficient — great for small games, too slow and noisy for 
 
 <aside>
 
-**$p_\pi(a|s)$**
+$p_\pi(a|s)$
 
 </aside>
 
