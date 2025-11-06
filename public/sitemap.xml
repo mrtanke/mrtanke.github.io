@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://my-blog-alpha-vert.vercel.app/posts/deepseek-r1_incentivizing_reasoning_capability_in/</loc>
-    <lastmod>2025-11-04T12:06:46+00:00</lastmod>
-  </url><url>
     <loc>https://my-blog-alpha-vert.vercel.app/</loc>
-    <lastmod>2025-11-04T12:06:46+00:00</lastmod>
+    <lastmod>2025-11-06T21:19:54+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/posts/high-resolution_image_synthesis_with_latent_diffus/</loc>
+    <lastmod>2025-11-06T21:19:54+00:00</lastmod>
   </url><url>
     <loc>https://my-blog-alpha-vert.vercel.app/posts/</loc>
+    <lastmod>2025-11-06T21:19:54+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/posts/deepseek-r1_incentivizing_reasoning_capability_in/</loc>
     <lastmod>2025-11-04T12:06:46+00:00</lastmod>
   </url><url>
     <loc>https://my-blog-alpha-vert.vercel.app/posts/vit/</loc>
