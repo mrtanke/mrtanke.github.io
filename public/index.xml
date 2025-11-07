@@ -6,8 +6,15 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.152.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Nov 2025 21:19:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Nov 2025 08:38:54 +0000</lastBuildDate>
     <atom:link href="https://my-blog-alpha-vert.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LMR: A Large-Scale Multi-Reference Dataset for Reference-based Super-Resolution</title>
+      <link>https://my-blog-alpha-vert.vercel.app/posts/lmr_a_large-scale_multi-reference_dataset_for_refe/</link>
+      <pubDate>Fri, 07 Nov 2025 08:38:54 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/posts/lmr_a_large-scale_multi-reference_dataset_for_refe/</guid>
+      <description>Paper-reading notes: LMR - A Large-Scale Multi-Reference Dataset for Reference-based Super-Resolution</description>
+    </item>
     <item>
       <title>Latent Diffusion Models</title>
       <link>https://my-blog-alpha-vert.vercel.app/posts/high-resolution_image_synthesis_with_latent_diffus/</link>
