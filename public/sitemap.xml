@@ -2,168 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/</loc>
     <lastmod>2025-11-07T09:32:10+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/</loc>
     <lastmod>2025-11-07T09:32:10+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/reference-based_face_super-resolution_using_the_sp/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/reference-based_face_super-resolution_using_the_sp/</loc>
     <lastmod>2025-11-07T09:32:10+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/reference-based_face_super-resolution_using_the_sp/</loc>
-    <lastmod>2025-11-07T09:32:10+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/reference-based_face_super-resolution_using_the_sp/</loc>
-    <lastmod>2025-11-07T09:32:10+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tagged/</loc>
-    <lastmod>2025-11-07T09:32:10+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-11-07T09:32:10+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/lmr_a_large-scale_multi-reference_dataset_for_refe/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/lmr_a_large-scale_multi-reference_dataset_for_refe/</loc>
     <lastmod>2025-11-07T08:38:54+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/lmr_a_large-scale_multi-reference_dataset_for_refe/</loc>
-    <lastmod>2025-11-07T08:38:54+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/lmr_a_large-scale_multi-reference_dataset_for_refe/</loc>
-    <lastmod>2025-11-07T08:38:54+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/high-resolution_image_synthesis_with_latent_diffus/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/high-resolution_image_synthesis_with_latent_diffus/</loc>
     <lastmod>2025-11-06T21:19:54+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/high-resolution_image_synthesis_with_latent_diffus/</loc>
-    <lastmod>2025-11-06T21:19:54+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/high-resolution_image_synthesis_with_latent_diffus/</loc>
-    <lastmod>2025-11-06T21:19:54+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/deepseek-r1_incentivizing_reasoning_capability_in/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/deepseek-r1_incentivizing_reasoning_capability_in/</loc>
     <lastmod>2025-11-04T12:06:46+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/deepseek-r1_incentivizing_reasoning_capability_in/</loc>
-    <lastmod>2025-11-04T12:06:46+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/deepseek-r1_incentivizing_reasoning_capability_in/</loc>
-    <lastmod>2025-11-04T12:06:46+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/vit/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/vit/</loc>
     <lastmod>2025-11-03T12:36:53+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/vit/</loc>
-    <lastmod>2025-11-03T12:36:53+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/vit/</loc>
-    <lastmod>2025-11-03T12:36:53+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/a_tutorial_on_bayesian_optimization/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/a_tutorial_on_bayesian_optimization/</loc>
     <lastmod>2025-11-01T23:05:46+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/a_tutorial_on_bayesian_optimization/</loc>
-    <lastmod>2025-11-01T23:05:46+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/a_tutorial_on_bayesian_optimization/</loc>
-    <lastmod>2025-11-01T23:05:46+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/crossnet&#43;&#43;_cross-scale_large-parallax_warping_for/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/crossnet&#43;&#43;_cross-scale_large-parallax_warping_for/</loc>
     <lastmod>2025-10-29T08:23:31+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/crossnet&#43;&#43;_cross-scale_large-parallax_warping_for/</loc>
-    <lastmod>2025-10-29T08:23:31+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/crossnet&#43;&#43;_cross-scale_large-parallax_warping_for/</loc>
-    <lastmod>2025-10-29T08:23:31+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/xlstm_extended_long_short-term_memory/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/xlstm_extended_long_short-term_memory/</loc>
     <lastmod>2025-10-28T13:18:30+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/xlstm_extended_long_short-term_memory/</loc>
-    <lastmod>2025-10-28T13:18:30+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/xlstm_extended_long_short-term_memory/</loc>
-    <lastmod>2025-10-28T13:18:30+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/rwkv/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/rwkv/</loc>
     <lastmod>2025-10-27T22:50:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/rwkv/</loc>
-    <lastmod>2025-10-27T22:50:43+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/rwkv/</loc>
-    <lastmod>2025-10-27T22:50:43+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/mastering-go-mcts/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/mastering-go-mcts/</loc>
     <lastmod>2025-10-24T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/mastering-go-mcts/</loc>
-    <lastmod>2025-10-24T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/mastering-go-mcts/</loc>
-    <lastmod>2025-10-24T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/crossnet_an_end-to-end_reference-based_super_resol/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/crossnet_an_end-to-end_reference-based_super_resol/</loc>
     <lastmod>2025-10-21T09:40:06+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/crossnet_an_end-to-end_reference-based_super_resol/</loc>
-    <lastmod>2025-10-21T09:40:06+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/crossnet_an_end-to-end_reference-based_super_resol/</loc>
-    <lastmod>2025-10-21T09:40:06+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/chain-of-thought-prompting/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/chain-of-thought-prompting/</loc>
     <lastmod>2025-10-20T13:58:55+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/chain-of-thought-prompting/</loc>
-    <lastmod>2025-10-20T13:58:55+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/chain-of-thought-prompting/</loc>
-    <lastmod>2025-10-20T13:58:55+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/learningbased_light_field_imaging/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/learningbased_light_field_imaging/</loc>
     <lastmod>2025-10-20T09:50:58+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/from_local_to_global_a_graphrag_approach_to_query-/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/from_local_to_global_a_graphrag_approach_to_query-/</loc>
     <lastmod>2025-10-16T19:42:01+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/retrieval-augmented_generation_for_knowledge-inten/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/retrieval-augmented_generation_for_knowledge-inten/</loc>
     <lastmod>2025-10-15T09:43:53+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/a_bridging_model_for_parallel_computation/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/a_bridging_model_for_parallel_computation/</loc>
     <lastmod>2025-10-10T12:30:04+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/a_bridging_model_for_parallel_computation/</loc>
-    <lastmod>2025-10-10T12:30:04+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/a_bridging_model_for_parallel_computation/</loc>
-    <lastmod>2025-10-10T12:30:04+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/attention_is_all_you_need/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/attention_is_all_you_need/</loc>
     <lastmod>2025-10-01T00:36:58+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/attention_is_all_you_need/</loc>
-    <lastmod>2025-10-01T00:36:58+00:00</lastmod>
+    <loc>https://my-blog-alpha-vert.vercel.app/archives/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/attention_is_all_you_need/</loc>
-    <lastmod>2025-10-01T00:36:58+00:00</lastmod>
+    <loc>https://my-blog-alpha-vert.vercel.app/search/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/from_local_to_global_a_graphrag_approach_to_query-/</loc>
-    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/archives/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/from_local_to_global_a_graphrag_approach_to_query-/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/learningbased_light_field_imaging/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/learningbased_light_field_imaging/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tagged/notes/posts/retrieval-augmented_generation_for_knowledge-inten/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/notes/posts/retrieval-augmented_generation_for_knowledge-inten/</loc>
-  </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://my-blog-alpha-vert.vercel.app/tags/</loc>
   </url>
 </urlset>
