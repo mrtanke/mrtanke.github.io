@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Home</description>
     <generator>Hugo -- 0.152.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Nov 2025 08:38:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Nov 2025 09:32:10 +0000</lastBuildDate>
     <atom:link href="https://my-blog-alpha-vert.vercel.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reference-Based Face Super-Resolution Using the Spatial Transformer</title>
+      <link>https://my-blog-alpha-vert.vercel.app/posts/reference-based_face_super-resolution_using_the_sp/</link>
+      <pubDate>Fri, 07 Nov 2025 09:32:10 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/posts/reference-based_face_super-resolution_using_the_sp/</guid>
+      <description>Paper-reading notes: Reference-Based Face Super-Resolution Using the Spatial Transformer</description>
+    </item>
     <item>
       <title>LMR: A Large-Scale Multi-Reference Dataset for Reference-based Super-Resolution</title>
       <link>https://my-blog-alpha-vert.vercel.app/posts/lmr_a_large-scale_multi-reference_dataset_for_refe/</link>
