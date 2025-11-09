@@ -166,7 +166,16 @@ def create_hugo_bundle(md_file: Path, assets_folder: Path, description: str, tag
     raw_name = md_file.stem
     slug = sanitize_name(raw_name)
 
-    dest_folder = Path(f"content/posts/{slug}")
+    # decide destination base based on tag so generated posts go to the matching
+    # top-level folder (e.g. content/notes, content/thoughts, content/projects).
+    tag_key = (tag or '').strip().lower()
+    tag_map = {
+        'notes': 'notes', 'note': 'notes',
+        'thoughts': 'thoughts', 'thought': 'thoughts',
+        'projects': 'projects', 'project': 'projects',
+    }
+    base = tag_map.get(tag_key, 'posts')
+    dest_folder = Path(f"content/{base}/{slug}")
     dest_folder.mkdir(parents=True, exist_ok=True)
 
     # 2) process assets: rename files to remove spaces, then move into dest_folder
