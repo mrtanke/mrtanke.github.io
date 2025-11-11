@@ -6,8 +6,29 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.152.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Nov 2025 15:01:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Nov 2025 13:19:33 +0000</lastBuildDate>
     <atom:link href="https://my-blog-alpha-vert.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Efficiently Modeling Long Sequences with Structured State Spaces</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/efficiently_modeling_long_sequences_with_structure/</link>
+      <pubDate>Tue, 11 Nov 2025 13:19:33 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/efficiently_modeling_long_sequences_with_structure/</guid>
+      <description>Paper-reading notes: S4</description>
+    </item>
+    <item>
+      <title>Retentive Network: A Successor to Transformer for Large Language Models</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/retentive_network_a_successor_to_transformer_for_l/</link>
+      <pubDate>Tue, 11 Nov 2025 10:20:33 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/retentive_network_a_successor_to_transformer_for_l/</guid>
+      <description>Paper-reading notes: RetNet</description>
+    </item>
+    <item>
+      <title>Exploiting Spatial and Angular Correlations With Deep Efficient Transformers for Light Field Image Super-Resolution</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/exploiting_spatial_and_angular_correlations_with_d/</link>
+      <pubDate>Mon, 10 Nov 2025 13:22:13 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/exploiting_spatial_and_angular_correlations_with_d/</guid>
+      <description>Paper-reading notes: LF-DET</description>
+    </item>
     <item>
       <title>Mixture-of-Recursions: Learning Dynamic Recursive Depths for Adaptive Token-Level Computation</title>
       <link>https://my-blog-alpha-vert.vercel.app/notes/mixture-of-recursions_learning_dynamic_recursive_d/</link>
