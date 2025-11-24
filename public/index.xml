@@ -6,8 +6,36 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.152.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Nov 2025 13:19:33 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Nov 2025 07:42:14 +0000</lastBuildDate>
     <atom:link href="https://my-blog-alpha-vert.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disentangling Light Fields for Super-Resolution and Disparity Estimation</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/disentangling_light_fields_for_super-resolution_an/</link>
+      <pubDate>Wed, 19 Nov 2025 07:42:14 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/disentangling_light_fields_for_super-resolution_an/</guid>
+      <description>Paper-reading notes: Distangling mechanism, DistgSSR, DistgASR, DistgDisp</description>
+    </item>
+    <item>
+      <title>Hyena Hierarchy: Towards Larger Convolutional Language Models</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/hyena_hierarchy_towards_larger_convolutional_langu/</link>
+      <pubDate>Tue, 18 Nov 2025 07:39:29 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/hyena_hierarchy_towards_larger_convolutional_langu/</guid>
+      <description>Paper-reading notes: Hyena Hierarchy</description>
+    </item>
+    <item>
+      <title>Mamba: Linear-Time Sequence Modeling with Selective State Spaces</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/mamba_linear-time_sequence_modeling_with_selective/</link>
+      <pubDate>Mon, 17 Nov 2025 07:38:28 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/mamba_linear-time_sequence_modeling_with_selective/</guid>
+      <description>Paper-reading notes: Mamba</description>
+    </item>
+    <item>
+      <title>A survey for light field super-resolution</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/a_survey_for_light_field_super-resolution/</link>
+      <pubDate>Fri, 14 Nov 2025 07:41:11 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/a_survey_for_light_field_super-resolution/</guid>
+      <description>Paper-reading notes: A survey for light field super-resolution</description>
+    </item>
     <item>
       <title>Efficiently Modeling Long Sequences with Structured State Spaces</title>
       <link>https://my-blog-alpha-vert.vercel.app/notes/efficiently_modeling_long_sequences_with_structure/</link>

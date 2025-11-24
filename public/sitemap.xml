@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://my-blog-alpha-vert.vercel.app/notes/efficiently_modeling_long_sequences_with_structure/</loc>
-    <lastmod>2025-11-11T13:19:33+00:00</lastmod>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/disentangling_light_fields_for_super-resolution_an/</loc>
+    <lastmod>2025-11-19T07:42:14+00:00</lastmod>
   </url><url>
     <loc>https://my-blog-alpha-vert.vercel.app/</loc>
-    <lastmod>2025-11-11T13:19:33+00:00</lastmod>
+    <lastmod>2025-11-19T07:42:14+00:00</lastmod>
   </url><url>
     <loc>https://my-blog-alpha-vert.vercel.app/notes/</loc>
+    <lastmod>2025-11-19T07:42:14+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/hyena_hierarchy_towards_larger_convolutional_langu/</loc>
+    <lastmod>2025-11-18T07:39:29+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/mamba_linear-time_sequence_modeling_with_selective/</loc>
+    <lastmod>2025-11-17T07:38:28+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/a_survey_for_light_field_super-resolution/</loc>
+    <lastmod>2025-11-14T07:41:11+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/efficiently_modeling_long_sequences_with_structure/</loc>
     <lastmod>2025-11-11T13:19:33+00:00</lastmod>
   </url><url>
     <loc>https://my-blog-alpha-vert.vercel.app/notes/retentive_network_a_successor_to_transformer_for_l/</loc>
