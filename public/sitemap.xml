@@ -2,13 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://my-blog-alpha-vert.vercel.app/notes/disentangling_light_fields_for_super-resolution_an/</loc>
-    <lastmod>2025-11-19T07:42:14+00:00</lastmod>
-  </url><url>
     <loc>https://my-blog-alpha-vert.vercel.app/</loc>
-    <lastmod>2025-11-19T07:42:14+00:00</lastmod>
+    <lastmod>2025-12-01T08:49:03+00:00</lastmod>
   </url><url>
     <loc>https://my-blog-alpha-vert.vercel.app/notes/</loc>
+    <lastmod>2025-12-01T08:49:03+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/on_the_representational_capacity_of_neural_languag/</loc>
+    <lastmod>2025-12-01T08:49:03+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/what_formal_languages_can_transformers_express_a_s/</loc>
+    <lastmod>2025-11-30T08:47:55+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/atlas_learning_to_optimally_memorize_the_context_a/</loc>
+    <lastmod>2025-11-29T08:46:44+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/solving_olympiad_geometry_without_human_demonstrat/</loc>
+    <lastmod>2025-11-28T08:42:56+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/formal_mathematical_reasoning_a_new_frontier_in_ai/</loc>
+    <lastmod>2025-11-27T08:42:29+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/titans_learning_to_memorize_at_test_time/</loc>
+    <lastmod>2025-11-26T08:42:17+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/roformer_enhanced_transformer_with_rotary_position/</loc>
+    <lastmod>2025-11-25T08:40:15+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/mastering_chess_and_shogi_by_self-play_with_a_gene/</loc>
+    <lastmod>2025-11-24T08:39:45+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/mastering_the_game_of_go_without_human_knowledge/</loc>
+    <lastmod>2025-11-24T08:38:30+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/disentangling_light_fields_for_super-resolution_an/</loc>
     <lastmod>2025-11-19T07:42:14+00:00</lastmod>
   </url><url>
     <loc>https://my-blog-alpha-vert.vercel.app/notes/hyena_hierarchy_towards_larger_convolutional_langu/</loc>

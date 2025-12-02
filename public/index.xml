@@ -6,8 +6,71 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.152.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Nov 2025 07:42:14 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Dec 2025 08:49:03 +0000</lastBuildDate>
     <atom:link href="https://my-blog-alpha-vert.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On the Representational Capacity of Neural Language Models with Chain-of-Thought Reasoning</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/on_the_representational_capacity_of_neural_languag/</link>
+      <pubDate>Mon, 01 Dec 2025 08:49:03 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/on_the_representational_capacity_of_neural_languag/</guid>
+      <description>Paper-reading notes: On the Representational Capacity of Neural Language Models with Chain-of-Thought Reasoning</description>
+    </item>
+    <item>
+      <title>What Formal Languages Can Transformers Express? A Survey</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/what_formal_languages_can_transformers_express_a_s/</link>
+      <pubDate>Sun, 30 Nov 2025 08:47:55 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/what_formal_languages_can_transformers_express_a_s/</guid>
+      <description>Paper-reading notes: What Formal Languages Can Transformers Express? A Survey</description>
+    </item>
+    <item>
+      <title>ATLAS: Learning to Optimally Memorize the Context at Test Time</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/atlas_learning_to_optimally_memorize_the_context_a/</link>
+      <pubDate>Sat, 29 Nov 2025 08:46:44 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/atlas_learning_to_optimally_memorize_the_context_a/</guid>
+      <description>Paper-reading notes: ATLAS</description>
+    </item>
+    <item>
+      <title>Solving olympiad geometry without human demonstrations</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/solving_olympiad_geometry_without_human_demonstrat/</link>
+      <pubDate>Fri, 28 Nov 2025 08:42:56 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/solving_olympiad_geometry_without_human_demonstrat/</guid>
+      <description>Paper-reading notes: AlphaGeometry</description>
+    </item>
+    <item>
+      <title>Formal Mathematical Reasoning A New Frontier in AI</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/formal_mathematical_reasoning_a_new_frontier_in_ai/</link>
+      <pubDate>Thu, 27 Nov 2025 08:42:29 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/formal_mathematical_reasoning_a_new_frontier_in_ai/</guid>
+      <description>Paper-reading notes: Formal Mathematical Reasoning A New Frontier in AI</description>
+    </item>
+    <item>
+      <title>Titans: Learning to Memorize at Test Time</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/titans_learning_to_memorize_at_test_time/</link>
+      <pubDate>Wed, 26 Nov 2025 08:42:17 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/titans_learning_to_memorize_at_test_time/</guid>
+      <description>Paper-reading notes: Titans</description>
+    </item>
+    <item>
+      <title>Roformer: Enhanced Transformer With Rotary Position Embedding</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/roformer_enhanced_transformer_with_rotary_position/</link>
+      <pubDate>Tue, 25 Nov 2025 08:40:15 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/roformer_enhanced_transformer_with_rotary_position/</guid>
+      <description>Paper-reading notes: Roformer</description>
+    </item>
+    <item>
+      <title>Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/mastering_chess_and_shogi_by_self-play_with_a_gene/</link>
+      <pubDate>Mon, 24 Nov 2025 08:39:45 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/mastering_chess_and_shogi_by_self-play_with_a_gene/</guid>
+      <description>Paper-reading notes: AlphaZero</description>
+    </item>
+    <item>
+      <title>Mastering the game of Go without human knowledge</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/mastering_the_game_of_go_without_human_knowledge/</link>
+      <pubDate>Mon, 24 Nov 2025 08:38:30 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/mastering_the_game_of_go_without_human_knowledge/</guid>
+      <description>Paper-reading notes: AlphaGo Zero</description>
+    </item>
     <item>
       <title>Disentangling Light Fields for Super-Resolution and Disparity Estimation</title>
       <link>https://my-blog-alpha-vert.vercel.app/notes/disentangling_light_fields_for_super-resolution_an/</link>
