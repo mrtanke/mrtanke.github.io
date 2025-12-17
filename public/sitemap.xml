@@ -3,10 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://my-blog-alpha-vert.vercel.app/</loc>
-    <lastmod>2025-12-01T08:49:03+00:00</lastmod>
+    <lastmod>2025-12-16T08:40:53+00:00</lastmod>
   </url><url>
     <loc>https://my-blog-alpha-vert.vercel.app/notes/</loc>
-    <lastmod>2025-12-01T08:49:03+00:00</lastmod>
+    <lastmod>2025-12-16T08:40:53+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/synthesizer_rethinking_self-attention_for_transfor/</loc>
+    <lastmod>2025-12-16T08:40:53+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/learning_transformer_programs/</loc>
+    <lastmod>2025-12-15T08:38:28+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/reformer_the_efficient_transformer/</loc>
+    <lastmod>2025-12-14T08:39:11+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/openvla_an_open-source_vision-language-action_mode/</loc>
+    <lastmod>2025-12-12T08:37:15+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/bayesian_optimization_is_superior_to_random_search/</loc>
+    <lastmod>2025-12-10T08:36:10+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/random_search_for_hyper-parameter_optimization/</loc>
+    <lastmod>2025-12-10T08:35:15+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/alta_compiler-based_analysis_of_transformers/</loc>
+    <lastmod>2025-12-09T08:34:00+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/tracr_compiled_transformers_as_a_laboratory_for_in/</loc>
+    <lastmod>2025-12-08T08:32:26+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/thinking_like_transformers/</loc>
+    <lastmod>2025-12-07T15:14:48+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/its_all_connected_a_journey_through_test-time_mem/</loc>
+    <lastmod>2025-12-06T15:13:02+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/fnet_mixing_tokens_with_fourier_transforms/</loc>
+    <lastmod>2025-12-05T15:11:32+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/linformer_self-attention_with_linear_complexity/</loc>
+    <lastmod>2025-12-04T15:10:45+00:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-alpha-vert.vercel.app/notes/rethinking_attention_with_performers/</loc>
+    <lastmod>2025-12-03T15:09:23+00:00</lastmod>
   </url><url>
     <loc>https://my-blog-alpha-vert.vercel.app/notes/on_the_representational_capacity_of_neural_languag/</loc>
     <lastmod>2025-12-01T08:49:03+00:00</lastmod>

@@ -6,8 +6,99 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.152.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Dec 2025 08:49:03 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Dec 2025 08:40:53 +0000</lastBuildDate>
     <atom:link href="https://my-blog-alpha-vert.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Synthesizer: Rethinking Self-Attention for Transformer Models</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/synthesizer_rethinking_self-attention_for_transfor/</link>
+      <pubDate>Tue, 16 Dec 2025 08:40:53 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/synthesizer_rethinking_self-attention_for_transfor/</guid>
+      <description>Paper-reading notes: Synthesizer</description>
+    </item>
+    <item>
+      <title>Learning Transformer Programs</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/learning_transformer_programs/</link>
+      <pubDate>Mon, 15 Dec 2025 08:38:28 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/learning_transformer_programs/</guid>
+      <description>Paper-reading notes: Learning Transformer Programs</description>
+    </item>
+    <item>
+      <title>Reformer: The Efficient Transformer</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/reformer_the_efficient_transformer/</link>
+      <pubDate>Sun, 14 Dec 2025 08:39:11 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/reformer_the_efficient_transformer/</guid>
+      <description>Paper-reading notes: Reformer</description>
+    </item>
+    <item>
+      <title>OpenVLA: An Open-Source Vision-Language-Action Model</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/openvla_an_open-source_vision-language-action_mode/</link>
+      <pubDate>Fri, 12 Dec 2025 08:37:15 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/openvla_an_open-source_vision-language-action_mode/</guid>
+      <description>Paper-reading notes: OpenVLA</description>
+    </item>
+    <item>
+      <title>Bayesian Optimization is Superior to Random Search for Machine Learning Hyperparameter Tuning</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/bayesian_optimization_is_superior_to_random_search/</link>
+      <pubDate>Wed, 10 Dec 2025 08:36:10 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/bayesian_optimization_is_superior_to_random_search/</guid>
+      <description>Paper-reading notes: Bayesian Optimization</description>
+    </item>
+    <item>
+      <title>Random Search for Hyper-Parameter Optimization</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/random_search_for_hyper-parameter_optimization/</link>
+      <pubDate>Wed, 10 Dec 2025 08:35:15 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/random_search_for_hyper-parameter_optimization/</guid>
+      <description>Paper-reading notes: Random Search for Hyper-Parameter Optimization</description>
+    </item>
+    <item>
+      <title>ALTA: Compiler-Based Analysis of Transformers</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/alta_compiler-based_analysis_of_transformers/</link>
+      <pubDate>Tue, 09 Dec 2025 08:34:00 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/alta_compiler-based_analysis_of_transformers/</guid>
+      <description>Paper-reading notes: ALTA</description>
+    </item>
+    <item>
+      <title>Tracr: Compiled Transformers as a Laboratory for Interpretability</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/tracr_compiled_transformers_as_a_laboratory_for_in/</link>
+      <pubDate>Mon, 08 Dec 2025 08:32:26 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/tracr_compiled_transformers_as_a_laboratory_for_in/</guid>
+      <description>Paper-reading notes: Tracr</description>
+    </item>
+    <item>
+      <title>Thinking Like Transformers</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/thinking_like_transformers/</link>
+      <pubDate>Sun, 07 Dec 2025 15:14:48 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/thinking_like_transformers/</guid>
+      <description>Paper-reading notes: RASP</description>
+    </item>
+    <item>
+      <title>It’s All Connected: A Journey Through Test-Time Memorization, Attentional Bias, Retention, and Online Optimization</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/its_all_connected_a_journey_through_test-time_mem/</link>
+      <pubDate>Sat, 06 Dec 2025 15:13:02 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/its_all_connected_a_journey_through_test-time_mem/</guid>
+      <description>Paper-reading notes: MIRAS</description>
+    </item>
+    <item>
+      <title>FNet: Mixing Tokens with Fourier Transforms</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/fnet_mixing_tokens_with_fourier_transforms/</link>
+      <pubDate>Fri, 05 Dec 2025 15:11:32 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/fnet_mixing_tokens_with_fourier_transforms/</guid>
+      <description>Paper-reading notes: FNet</description>
+    </item>
+    <item>
+      <title>Linformer: Self-Attention with Linear Complexity</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/linformer_self-attention_with_linear_complexity/</link>
+      <pubDate>Thu, 04 Dec 2025 15:10:45 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/linformer_self-attention_with_linear_complexity/</guid>
+      <description>Paper-reading notes: Linformer</description>
+    </item>
+    <item>
+      <title>Rethinking Attention with Performers</title>
+      <link>https://my-blog-alpha-vert.vercel.app/notes/rethinking_attention_with_performers/</link>
+      <pubDate>Wed, 03 Dec 2025 15:09:23 +0000</pubDate>
+      <guid>https://my-blog-alpha-vert.vercel.app/notes/rethinking_attention_with_performers/</guid>
+      <description>Paper-reading notes: Performers</description>
+    </item>
     <item>
       <title>On the Representational Capacity of Neural Language Models with Chain-of-Thought Reasoning</title>
       <link>https://my-blog-alpha-vert.vercel.app/notes/on_the_representational_capacity_of_neural_languag/</link>
