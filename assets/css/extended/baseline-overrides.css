@@ -1,0 +1,52 @@
+/* Align default body typography with the reference blog */
+body {
+  font-size: 16px;
+}
+
+/* Match the legacy heading scale from lilianweng.github.io */
+.post-title {
+  font-size: 36px;
+}
+
+.post-content h1 {
+  margin: 28px auto 20px;
+  font-size: 28px;
+}
+
+.post-content h2 {
+  margin: 24px auto 16px;
+  font-size: 24px;
+}
+
+.post-content h3 {
+  font-size: 18px;
+}
+
+.post-content h4 {
+  font-size: 16px;
+}
+
+.post-content h5 {
+  font-size: 14px;
+}
+
+.post-content h6 {
+  font-size: 12px;
+}
+
+/* Remove the extra breathing room that PaperMod v8 adds to the hero card */
+.first-entry {
+  min-height: auto;
+}
+
+/* Keep the site title pinned at the top-left like lilianweng.github.io */
+.nav {
+  justify-content: flex-end;
+}
+
+.logo {
+  position: fixed;
+  flex-wrap: inherit;
+  left: calc((100vw - var(--main-width) - var(--gap) * 2) / 2 - 138px);
+  top: 0;
+}

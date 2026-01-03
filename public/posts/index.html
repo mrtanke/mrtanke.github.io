@@ -5,12 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | Home</title>
+<title>Posts | Re:Log</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Home">
+<meta name="description" content="Posts - Re:Log">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9bb7abd44394c0e0d2cecd8ad4322626054cd3f5709a6d890d5a408efaf1fa90.css" integrity="sha256-m7er1EOUwODSzs2K1DImJgVM0/Vwmm2JDVpAjvrx&#43;pA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.86c386df721ca856b8131cebd64384a19563bf9622b2db475a788943d7fcb089.css" integrity="sha256-hsOG33IcqFa4Exzr1kOEoZVjv5YisttHWniJQ9f8sIk=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/selfile.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/selfile.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/selfile.png">
@@ -79,62 +79,8 @@
   });
 </script>
 
-  
-  <style>
-     
-    ul#menu .tag-button {
-      background: none;
-      border: none;
-      padding: 0;
-      margin: 0;
-      font-weight: 500;
-      color: inherit;
-      cursor: pointer;
-      text-decoration: none;
-      opacity: 0.95;
-      display: inline-block;
-    }
-    ul#menu .tag-button:hover { text-decoration: underline; }
-    ul#menu .tag-button.active { text-decoration: underline; font-weight: 600; }
-
-     
-    body.is-home .post-entry { display: none; }
-    body.is-home .page-footer .pagination { display: none; }
-  </style>
-
-  
-  <script>
-    (function(){
-      function isRootPath() {
-        const p = location.pathname.replace(/\/+/g, '/');
-        return p === '/' || p === '' || p === '/index.html';
-      }
-
-      if (isRootPath()) document.body.classList.add('is-home');
-
-      
-      document.addEventListener('DOMContentLoaded', function(){
-        const menu = document.getElementById('menu');
-        if (!menu) return;
-        
-        if (menu.querySelector('.tag-button')) return;
-        const tags = ['Notes','Thoughts','Projects'];
-        tags.forEach(t => {
-          const li = document.createElement('li');
-          const a = document.createElement('a');
-          a.className = 'tag-button';
-          a.href = `/tags/${t.toLowerCase()}/`;
-          a.textContent = t;
-          
-          if (location.pathname.toLowerCase().startsWith(`/tags/${t.toLowerCase()}`)) a.classList.add('active');
-          li.appendChild(a);
-          menu.appendChild(li);
-        });
-      });
-    })();
-  </script>
 <meta property="og:url" content="http://localhost:1313/posts/">
-  <meta property="og:site_name" content="Home">
+  <meta property="og:site_name" content="Re:Log">
   <meta property="og:title" content="Posts">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="website">
@@ -163,7 +109,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -172,171 +122,202 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Re:Log (Alt + H)">Re:Log</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
             <li>
-                <a class="tag-button" href="http://localhost:1313/tags/notes/">
-                    <span>Notes</span>
+                <a href="http://localhost:1313/" title="Posts">
+                    <span class="active">Posts</span>
                 </a>
             </li>
             <li>
-                <a class="tag-button" href="http://localhost:1313/tags/thoughts/">
-                    <span>Thoughts</span>
-                </a>
-            </li>
-            <li>
-                <a class="tag-button" href="http://localhost:1313/tags/projects/">
+                <a href="http://localhost:1313/projects/" title="Projects">
                     <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt + /)" accesskey="/">
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
                 </a>
             </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+<header class="page-header">
   <h1>
     Posts
-    <a href="/posts/index.xml" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
   </h1>
 </header>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Reference-Based Face Super-Resolution Using the Spatial Transformer
+    <h2 class="entry-hint-parent">Diffusion Policy: Visuomotor Policy Learning via Action Diffusion
     </h2>
   </header>
   <div class="entry-content">
-      Paper-reading notes: Reference-Based Face Super-Resolution Using the Spatial Transformer
+      Paper-reading notes: Diffusion Policy
   </div>
-  <footer class="entry-footer"><span title='2025-11-07 09:32:10 +0000 +0000'>November 7, 2025</span>&nbsp;·&nbsp;<span>428 words</span></footer>
-  <a class="entry-link" aria-label="post link to Reference-Based Face Super-Resolution Using the Spatial Transformer" href="/posts/reference-based_face_super-resolution_using_the_sp/"></a>
+  <footer class="entry-footer"><span title='2025-12-28 15:32:18 +0000 +0000'>December 28, 2025</span>&nbsp;·&nbsp;<span>672 words</span></footer>
+  <a class="entry-link" aria-label="post link to Diffusion Policy: Visuomotor Policy Learning via Action Diffusion" href="/posts/2025-12-28-diffusion-policy-visuomotor-policy-learning-via-action-diffusion/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">LMR: A Large-Scale Multi-Reference Dataset for Reference-based Super-Resolution
+    <h2 class="entry-hint-parent">Synthesizer: Rethinking Self-Attention for Transformer Models
     </h2>
   </header>
   <div class="entry-content">
-      Paper-reading notes: LMR - A Large-Scale Multi-Reference Dataset for Reference-based Super-Resolution
+      Paper-reading notes: Synthesizer
   </div>
-  <footer class="entry-footer"><span title='2025-11-07 08:38:54 +0000 +0000'>November 7, 2025</span>&nbsp;·&nbsp;<span>1157 words</span></footer>
-  <a class="entry-link" aria-label="post link to LMR: A Large-Scale Multi-Reference Dataset for Reference-based Super-Resolution" href="/posts/lmr_a_large-scale_multi-reference_dataset_for_refe/"></a>
+  <footer class="entry-footer"><span title='2025-12-16 08:40:53 +0000 +0000'>December 16, 2025</span>&nbsp;·&nbsp;<span>244 words</span></footer>
+  <a class="entry-link" aria-label="post link to Synthesizer: Rethinking Self-Attention for Transformer Models" href="/posts/2025-12-16-synthesizer-rethinking-self-attention-for-transformer-models/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Latent Diffusion Models
+    <h2 class="entry-hint-parent">Learning Transformer Programs
     </h2>
   </header>
   <div class="entry-content">
-      Paper-reading notes: High-Resolution Image Synthesis with Latent Diffusion Models
+      Paper-reading notes: Learning Transformer Programs
   </div>
-  <footer class="entry-footer"><span title='2025-11-06 21:19:54 +0000 +0000'>November 6, 2025</span>&nbsp;·&nbsp;<span>964 words</span></footer>
-  <a class="entry-link" aria-label="post link to Latent Diffusion Models" href="/posts/high-resolution_image_synthesis_with_latent_diffus/"></a>
+  <footer class="entry-footer"><span title='2025-12-15 08:38:28 +0000 +0000'>December 15, 2025</span>&nbsp;·&nbsp;<span>339 words</span></footer>
+  <a class="entry-link" aria-label="post link to Learning Transformer Programs" href="/posts/2025-12-15-learning-transformer-programs/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
+    <h2 class="entry-hint-parent">Reformer: The Efficient Transformer
     </h2>
   </header>
   <div class="entry-content">
-      Paper-reading notes: DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
+      Paper-reading notes: Reformer
   </div>
-  <footer class="entry-footer"><span title='2025-11-04 12:06:46 +0000 +0000'>November 4, 2025</span>&nbsp;·&nbsp;<span>2299 words</span></footer>
-  <a class="entry-link" aria-label="post link to DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning" href="/posts/deepseek-r1_incentivizing_reasoning_capability_in/"></a>
+  <footer class="entry-footer"><span title='2025-12-14 08:39:11 +0000 +0000'>December 14, 2025</span>&nbsp;·&nbsp;<span>287 words</span></footer>
+  <a class="entry-link" aria-label="post link to Reformer: The Efficient Transformer" href="/posts/2025-12-14-reformer-the-efficient-transformer/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale
+    <h2 class="entry-hint-parent">OpenVLA: An Open-Source Vision-Language-Action Model
     </h2>
   </header>
   <div class="entry-content">
-      Paper-reading notes: ViT
+      Paper-reading notes: OpenVLA
   </div>
-  <footer class="entry-footer"><span title='2025-11-03 12:36:53 +0000 +0000'>November 3, 2025</span>&nbsp;·&nbsp;<span>1851 words</span></footer>
-  <a class="entry-link" aria-label="post link to An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" href="/posts/vit/"></a>
+  <footer class="entry-footer"><span title='2025-12-12 08:37:15 +0000 +0000'>December 12, 2025</span>&nbsp;·&nbsp;<span>312 words</span></footer>
+  <a class="entry-link" aria-label="post link to OpenVLA: An Open-Source Vision-Language-Action Model" href="/posts/2025-12-12-openvla-an-open-source-vision-language-action-model/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">A Tutorial on Bayesian Optimization
+    <h2 class="entry-hint-parent">Bayesian Optimization is Superior to Random Search for Machine Learning Hyperparameter Tuning
     </h2>
   </header>
   <div class="entry-content">
-      Paper-reading notes: A Tutorial on Bayesian Optimization
+      Paper-reading notes: Bayesian Optimization
   </div>
-  <footer class="entry-footer"><span title='2025-11-01 23:05:46 +0000 +0000'>November 1, 2025</span>&nbsp;·&nbsp;<span>3591 words</span></footer>
-  <a class="entry-link" aria-label="post link to A Tutorial on Bayesian Optimization" href="/posts/a_tutorial_on_bayesian_optimization/"></a>
+  <footer class="entry-footer"><span title='2025-12-10 08:36:10 +0000 +0000'>December 10, 2025</span>&nbsp;·&nbsp;<span>864 words</span></footer>
+  <a class="entry-link" aria-label="post link to Bayesian Optimization is Superior to Random Search for Machine Learning Hyperparameter Tuning" href="/posts/2025-12-10-bayesian-optimization-is-superior-to-random-search-for-machine-learning-hyperparameter-tuning/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">CrossNet&#43;&#43;: Cross-Scale Large-Parallax Warping for Reference-Based Super-Resolution
+    <h2 class="entry-hint-parent">Random Search for Hyper-Parameter Optimization
     </h2>
   </header>
   <div class="entry-content">
-      Paper-reading notes: CrossNet++: Cross-Scale Large-Parallax Warping for Reference-Based Super-Resolution
+      Paper-reading notes: Random Search for Hyper-Parameter Optimization
   </div>
-  <footer class="entry-footer"><span title='2025-10-29 08:23:31 +0000 +0000'>October 29, 2025</span>&nbsp;·&nbsp;<span>1433 words</span></footer>
-  <a class="entry-link" aria-label="post link to CrossNet&#43;&#43;: Cross-Scale Large-Parallax Warping for Reference-Based Super-Resolution" href="/posts/crossnet&#43;&#43;_cross-scale_large-parallax_warping_for/"></a>
+  <footer class="entry-footer"><span title='2025-12-10 08:35:15 +0000 +0000'>December 10, 2025</span>&nbsp;·&nbsp;<span>774 words</span></footer>
+  <a class="entry-link" aria-label="post link to Random Search for Hyper-Parameter Optimization" href="/posts/2025-12-10-random-search-for-hyper-parameter-optimization/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">xLSTM: Extended Long Short-Term Memory
+    <h2 class="entry-hint-parent">ALTA: Compiler-Based Analysis of Transformers
     </h2>
   </header>
   <div class="entry-content">
-      Paper-reading notes: xLSTM Extended Long Short-Term Memory
+      Paper-reading notes: ALTA
   </div>
-  <footer class="entry-footer"><span title='2025-10-28 13:18:30 +0000 +0000'>October 28, 2025</span>&nbsp;·&nbsp;<span>1394 words</span></footer>
-  <a class="entry-link" aria-label="post link to xLSTM: Extended Long Short-Term Memory" href="/posts/xlstm_extended_long_short-term_memory/"></a>
+  <footer class="entry-footer"><span title='2025-12-09 08:34:00 +0000 +0000'>December 9, 2025</span>&nbsp;·&nbsp;<span>720 words</span></footer>
+  <a class="entry-link" aria-label="post link to ALTA: Compiler-Based Analysis of Transformers" href="/posts/2025-12-09-alta-compiler-based-analysis-of-transformers/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">RWKV: Reinventing RNNs for the Transformer Era
+    <h2 class="entry-hint-parent">Tracr: Compiled Transformers as a Laboratory for Interpretability
     </h2>
   </header>
   <div class="entry-content">
-      Paper-reading notes: RWKV: Reinventing RNNs for the Transformer Era
+      Paper-reading notes: Tracr
   </div>
-  <footer class="entry-footer"><span title='2025-10-27 22:50:43 +0000 +0000'>October 27, 2025</span>&nbsp;·&nbsp;<span>1499 words</span></footer>
-  <a class="entry-link" aria-label="post link to RWKV: Reinventing RNNs for the Transformer Era" href="/posts/rwkv/"></a>
+  <footer class="entry-footer"><span title='2025-12-08 08:32:26 +0000 +0000'>December 8, 2025</span>&nbsp;·&nbsp;<span>59 words</span></footer>
+  <a class="entry-link" aria-label="post link to Tracr: Compiled Transformers as a Laboratory for Interpretability" href="/posts/2025-12-08-tracr-compiled-transformers-as-a-laboratory-for-interpretability/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Mastering the game of Go with MCTS and Deep Neural Networks
+    <h2 class="entry-hint-parent">Thinking Like Transformers
     </h2>
   </header>
   <div class="entry-content">
-      Paper-reading notes: Mastering the game of Go with MCTS and Deep Neural Networks
+      Paper-reading notes: RASP
   </div>
-  <footer class="entry-footer"><span title='2025-10-24 10:00:00 +0000 +0000'>October 24, 2025</span>&nbsp;·&nbsp;<span>2246 words</span></footer>
-  <a class="entry-link" aria-label="post link to Mastering the game of Go with MCTS and Deep Neural Networks" href="/posts/mastering-go-mcts/"></a>
+  <footer class="entry-footer"><span title='2025-12-07 15:14:48 +0000 +0000'>December 7, 2025</span>&nbsp;·&nbsp;<span>273 words</span></footer>
+  <a class="entry-link" aria-label="post link to Thinking Like Transformers" href="/posts/2025-12-07-thinking-like-transformers/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="http://localhost:1313/posts/page/2/">Next&nbsp;2/2&nbsp;»
+    <a class="next" href="http://localhost:1313/posts/page/2/">&nbsp;2/5&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Re:Log</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
@@ -383,6 +364,18 @@
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

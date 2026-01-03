@@ -31,6 +31,13 @@ dist/
 *.egg-info/
 *.egg
 
+# Hugo build artifacts
+public/
+resources/_gen/
+.hugo_build.lock
+tmp_zip/
+hugo_stats.json
+
 #  Logs & temp files 
 *.log
 logs/
@@ -53,6 +60,12 @@ htmlcov/
 .vscode/
 .idea/
 *.code-workspace
+
+# Node / JS tooling
+node_modules/
+.pnpm-store/
+package-lock.json
+yarn.lock
 
 #  Windows (harmless on macOS; keeps repo cross-platform clean) 
 Thumbs.db

@@ -1,6 +1,6 @@
-baseURL: https://my-blog-alpha-vert.vercel.app/
+baseURL: https://tanke.github.io/
 languageCode: en-us
-title: Home
+title: Re:Log
 theme: ["PaperMod"]
 
 # Only enable tags taxonomy. This prevents Hugo from generating category archive pages.
@@ -32,28 +32,29 @@ params:
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
-  disableThemeToggle: true
+  disableThemeToggle: false
   ShowShareButtons: false
   ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
-  ShowPostNavLinks: false
-  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
-  ShowRssButtonInSectionTermList: true
+  ShowRssButtonInSectionTermList: false
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
-  hideFooter: true
+  hideFooter: false
   # comments: false
 
   homeInfoParams:
-    Title: "Tan Ke’s Notes"
+    Title: "👋 Welcome to Re:Log"
     Content: >
-      👋 Welcome to My Learning Hub!
-        - Hi! I'm Tan Ke, a data science student at Heidelberg University.
-        - I am interested in GenAI, Reasoning with LLMs, Intelligent system, Optimization in ML...
-        - Here I share my **paper-reading notes 📝**, new insights, and machine learning projects 💻.
+      Hi, this is Tanke, I'm a data science student at Heidelberg University. 
+
+      - Documenting my learning notes in this blog since 2025 📝 💻. 
+
+      - I'm currently exploring the frontiers of Generative AI and Embodied Intelligence 🦾. 
 
   socialIcons:
     - name: github

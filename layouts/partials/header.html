@@ -122,47 +122,31 @@
                 {{- end }}
             </div>
         </div>
-            {{- $currentPage := . }}
+            {{- $rp := .RelPermalink }}
         <ul id="menu">
-            {{- range site.Menus.main }}
-            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
-            {{- $page_url:= $currentPage.RelPermalink | absLangURL }}
-            {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             <li>
-                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
-                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
-                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
-                        {{- .Pre }}
-                        {{- .Name -}}
-                        {{ .Post -}}
-                    </span>
-                    {{- if (findRE "://" .URL) }}&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                    {{- end }}
-                </a>
-            </li>
-            {{- end }}
-
-            {{- /* tag links: Notes, Thoughts, Projects (server-rendered so they show without JS) */}}
-            {{- $rp := $currentPage.RelPermalink }}
-            <li>
-                <a class="tag-button" href="{{ "/notes/" | absLangURL }}">
-                    <span {{- if strings.HasPrefix $rp "/notes/" }} class="active" {{- end }}>Notes</span>
+                <a href="{{ "/" | absLangURL }}" title="Posts">
+                    <span{{- if or .IsHome (strings.HasPrefix $rp "/posts/") }} class="active"{{- end }}>Posts</span>
                 </a>
             </li>
             <li>
-                <a class="tag-button" href="{{ "/thoughts/" | absLangURL }}">
-                    <span {{- if strings.HasPrefix $rp "/thoughts/" }} class="active" {{- end }}>Thoughts</span>
+                <a href="{{ "/projects/" | absLangURL }}" title="Projects">
+                    <span{{- if strings.HasPrefix $rp "/projects/" }} class="active"{{- end }}>Projects</span>
                 </a>
             </li>
             <li>
-                <a class="tag-button" href="{{ "/projects/" | absLangURL }}">
-                    <span {{- if strings.HasPrefix $rp "/projects/" }} class="active" {{- end }}>Projects</span>
+                <a href="{{ "/archives/" | absLangURL }}" title="Archive">
+                    <span{{- if strings.HasPrefix $rp "/archives/" }} class="active"{{- end }}>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ "/search/" | absLangURL }}" title="Search (Alt + /)" accesskey="/">
+                    <span{{- if strings.HasPrefix $rp "/search/" }} class="active"{{- end }}>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ "/tags/" | absLangURL }}" title="Tags">
+                    <span{{- if strings.HasPrefix $rp "/tags/" }} class="active"{{- end }}>Tags</span>
                 </a>
             </li>
         </ul>

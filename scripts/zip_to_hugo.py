@@ -70,18 +70,12 @@ def find_md_and_assets(folder: Path):
 
 
 def sanitize_name(name: str) -> str:
-    """Remove trailing id-like suffix and replace spaces with underscores.
-
-    Example: 'Attention is All You Need 176559a0...' -> 'Attention_is_All_You_Need'
-    """
-    # remove extension if present
-    base = name
-    # strip trailing hex/id-ish suffix preceded by space
-    base = re.sub(r"\s+[0-9a-fA-F\-]+$", "", base)
-    # collapse whitespace
-    base = re.sub(r"\s+", " ", base).strip()
-    slug = base.replace(' ', '_')
-    return slug
+    """Convert a Notion-exported title into a lowercase, hyphenated slug."""
+    base = re.sub(r"\s+[0-9a-fA-F\-]+$", "", name)
+    base = re.sub(r"\s+", " ", base).strip().lower()
+    slug = re.sub(r"[^a-z0-9]+", "-", base)
+    slug = re.sub(r"-+", "-", slug).strip('-')
+    return slug or "post"
 
 
 def rename_files_replace_spaces(folder: Path):
@@ -161,10 +155,18 @@ def fix_markdown_image_links(md_text: str) -> str:
     return protected
 
 
-def create_hugo_bundle(md_file: Path, assets_folder: Path, description: str, tag: str) -> Path:
+def create_hugo_bundle(
+    md_file: Path,
+    assets_folder: Path,
+    description: str,
+    tag: str,
+    tags: list[str] | None = None,
+) -> Path:
     # 1) compute slug from file name
     raw_name = md_file.stem
     slug = sanitize_name(raw_name)
+    date_prefix = datetime.date.today().isoformat()
+    bundle_name = f"{date_prefix}-{slug}"
 
     # decide destination base based on tag so generated posts go to the matching
     # top-level folder (e.g. content/notes, content/thoughts, content/projects).
@@ -175,8 +177,12 @@ def create_hugo_bundle(md_file: Path, assets_folder: Path, description: str, tag
         'projects': 'projects', 'project': 'projects',
     }
     base = tag_map.get(tag_key, 'posts')
-    dest_folder = Path(f"content/{base}/{slug}")
-    dest_folder.mkdir(parents=True, exist_ok=True)
+    dest_folder = Path(f"content/{base}/{bundle_name}")
+    counter = 1
+    while dest_folder.exists():
+        dest_folder = Path(f"content/{base}/{bundle_name}-{counter}")
+        counter += 1
+    dest_folder.mkdir(parents=True, exist_ok=False)
 
     # 2) process assets: rename files to remove spaces, then move into dest_folder
     if assets_folder and assets_folder.exists():
@@ -208,8 +214,8 @@ def create_hugo_bundle(md_file: Path, assets_folder: Path, description: str, tag
     md_text = fix_markdown_image_links(md_text)
 
     # 4) write index.md with front matter
-    # prepare title from slug (replace underscores with spaces)
-    title = slug.replace('_', ' ')
+    # prepare title from slug (replace hyphens with spaces)
+    title = slug.replace('-', ' ')
     # if no description provided, default to 'Paper-reading notes: {title}'
     if description and description.strip():
         final_desc = description.strip()
@@ -222,8 +228,16 @@ def create_hugo_bundle(md_file: Path, assets_folder: Path, description: str, tag
 
     now = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
 
-    # include the single `tag` field in front matter so templates can use it
     esc_tag = tag.replace("'", "''") if tag else 'Notes'
+    cleaned_tags = []
+    for item in tags or []:
+        item = item.strip()
+        if item:
+            cleaned_tags.append(item)
+    if not cleaned_tags:
+        cleaned_tags = [tag or 'Notes']
+    escaped_tags = [t.replace("'", "''") for t in cleaned_tags]
+    tags_block = "tags:\n" + ''.join(f"  - '{t}'\n" for t in escaped_tags)
     front = (
         '---\n'
         f"title: '{esc_title}'\n"
@@ -233,6 +247,7 @@ def create_hugo_bundle(md_file: Path, assets_folder: Path, description: str, tag
         f"tag: '{esc_tag}'\n"
         "ShowWordCount: true\n"
         "ShowReadingTime: false\n"
+        f"{tags_block}"
         '---\n\n'
     )
 
@@ -243,10 +258,10 @@ def create_hugo_bundle(md_file: Path, assets_folder: Path, description: str, tag
     return dest_folder
 
 
-def main(description: str = '', tag: str = 'Notes'):
+def main(description: str = '', tag: str = 'Notes', tags: list[str] | None = None):
     extracted = unzip_notion()
     md_file, assets_folder = find_md_and_assets(extracted)
-    dest = create_hugo_bundle(md_file, assets_folder, description, tag)
+    dest = create_hugo_bundle(md_file, assets_folder, description, tag, tags)
     print('Created Hugo bundle at', dest)
 
 
@@ -254,7 +269,17 @@ if __name__ == '__main__':
     import argparse
 
     p = argparse.ArgumentParser(description='Unzip Notion export and create Hugo post bundle')
-    p.add_argument('description', nargs='?', default='', help='optional description to use in front matter')
-    p.add_argument('--tag', dest='tag', default='Notes', help='Tag to add to the generated post front matter (e.g. Notes, Thoughts, Projects)')
+    p.add_argument('--description', nargs='?', default='', help='optional description to use in front matter')
+    p.add_argument('--tag', dest='tag', default='Notes', help='Section selector (Notes, Thoughts, Projects) used for the bundle path and fallback tag')
+    p.add_argument('--tags', nargs='*', default=None, help='Space- or comma-separated tags to include in front matter (e.g. --tags vision-model rag)')
     args = p.parse_args()
-    main(args.description, args.tag)
+
+    cli_tags: list[str] | None = None
+    if args.tags:
+        parsed: list[str] = []
+        for entry in args.tags:
+            parts = [part.strip() for part in entry.split(',') if part.strip()]
+            parsed.extend(parts)
+        cli_tags = parsed or None
+
+    main(args.description, args.tag, cli_tags)
