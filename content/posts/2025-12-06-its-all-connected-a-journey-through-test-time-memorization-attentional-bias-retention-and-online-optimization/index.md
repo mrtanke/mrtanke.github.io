@@ -93,7 +93,6 @@ $$
 W_t = \arg\min_W \sum_{i=1}^t \langle W - W_{t-1}, \nabla \ell(W_{t-1}; k_i, v_i) \rangle
 +
 \frac{1}{2\eta_t}|W|^2.
-
 $$
 
 - The first term measures how well memory fits new data;
@@ -108,7 +107,6 @@ W_t = \arg\min_{W \in \mathcal{W}}
 \left(\sum_{i=1}^t \tilde{\ell}_i(W; k_i, v_i)\right)
 +
 \frac{1}{\eta_t} R_t(W).
-
 $$
 
 Here:
@@ -127,7 +125,6 @@ W_t = \arg\min_W
 \Big( \langle W - W_{t-1}, \nabla \ell(W_{t-1}; k_t, v_t)\rangle
 +
 \frac{1}{2\eta_t} |W - W_{t-1}|^2 \Big).
-
 $$
 
 The form generalizes to:
@@ -147,7 +144,6 @@ $$
 \frac{1}{\eta_t} D_t(W, W_{t-1})
 +
 \frac{1}{\alpha_t} G_t(W).
-
 $$
 
 - $D_t$: local retention → prevents forgetting

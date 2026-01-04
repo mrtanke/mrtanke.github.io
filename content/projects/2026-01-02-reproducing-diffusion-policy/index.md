@@ -13,7 +13,7 @@ tags:
 
 At the end of 2025, I spent a few days reproducing Diffusion Policy from [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](https://arxiv.org/abs/2303.04137).
 
-I first spent about one day to go through the paper. If you are interested, feel free to check [paper reading note](https://my-blog-alpha-vert.vercel.app/notes/diffusion_policy_visuomotor_policy_learning_via_ac/). The work is impressive, so I decided to reproduce it over the Christmas break. This is the repo address https://github.com/mrtanke/diffusion-policy.
+I first spent about one day to go through the paper. If you are interested, feel free to check [paper reading note](https://mrtanke.github.io/posts/2025-12-28-diffusion-policy-visuomotor-policy-learning-via-action-diffusion/). The work is impressive, so I decided to reproduce it over the Christmas break. This is the repo address https://github.com/mrtanke/diffusion-policy.
 
 # Repo skeleton
 
@@ -318,7 +318,7 @@ This is basiclly the full story of this reproduction. Recently I’ve been divin
 # References
 
 1. Ajay, A., Du, Y., Gupta, A., et al. "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion." arXiv:2303.04137, 2023.
-2. reven. "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion (Reading Notes)." [https://my-blog-alpha-vert.vercel.app/notes/diffusion_policy_visuomotor_policy_learning_via_ac/](https://my-blog-alpha-vert.vercel.app/notes/diffusion_policy_visuomotor_policy_learning_via_ac/), 2025.
+2. reven. "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion (Reading Notes)." [https://mrtanke.github.io/posts/2025-12-28-diffusion-policy-visuomotor-policy-learning-via-action-diffusion/](https://mrtanke.github.io/posts/2025-12-28-diffusion-policy-visuomotor-policy-learning-via-action-diffusion/), 2025.
 3. Tassa, Y., Doron, Y., Muldal, A., et al. "DeepMind Control Suite." arXiv:1801.00690, 2018.
 4. Ho, J., Jain, A., and Abbeel, P. "Denoising Diffusion Probabilistic Models." Advances in Neural Information Processing Systems (NeurIPS), 2020.
 5. Vaswani, A., Shazeer, N., Parmar, N., et al. "Attention Is All You Need." Advances in Neural Information Processing Systems (NeurIPS), 2017.

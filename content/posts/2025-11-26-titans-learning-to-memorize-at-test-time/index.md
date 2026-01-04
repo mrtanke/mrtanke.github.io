@@ -11,7 +11,7 @@ tags:
 ---
 
 
-# **1. Introduction**
+# 1. Introduction
 
 Transformers provide **accurate short-term memory** through attention but suffer from **quadratic cost** and **fixed context window** limits. Linear Transformers and modern linear RNNs improve efficiency but must **compress all history into fixed-size states**, which causes **memory overflow and poor long-range recall**.v
 
@@ -24,9 +24,9 @@ Titans introduce:
 - A **neural long-term memory (LMM)** that updates weights at test time.
 - Titans architectures that integrate LMM with attention and **persistent memory**.
 
-# **2. Method**
+# 2. Method
 
-## **2.1 Neural Long-term Memory (LMM)**
+## 2.1 Neural Long-term Memory (LMM)
 
 LMM treats learning as **memorizing past tokens into its parameters** during test time.
 
@@ -42,13 +42,13 @@ $$
 
 where $k_t = x_t W_K$ and $v_t = x_t W_V$.
 
-1. **Surprise gradient:**
+2. **Surprise gradient:**
 
 $$
 g_t = \nabla_{M_{t-1}}\ell
 $$
 
-1. **Surprise momentum:**
+3. **Surprise momentum:**
 
 $$
 S_t = \eta_t S_{t-1} - \theta_t g_t
@@ -64,19 +64,19 @@ $$
 M_t = (1 - \alpha_t) M_{t-1} + S_t
 $$
 
-1. **Retrieval:**
+2. **Retrieval:**
 
 $$
 y_t = M_t(q_t)
 $$
 
-## **2.2 Parallelizable Training**
+## 2.2 Parallelizable Training
 
 LMM training is equivalent to **mini-batch gradient descent with momentum + weight decay**.
 
 The authors show this can be reformulated into operations using **matmuls + associative scan**, enabling **fast, hardware-friendly parallel training**.
 
-## **2.3 Persistent Memory**
+## 2.3 Persistent Memory
 
 A small set of **fixed, learnable vectors** prepended to the sequence.
 
@@ -86,7 +86,7 @@ Purpose:
 - Counteract attention bias toward early tokens.
 - Equivalent to **data-independent attention keys/values** (as shown by FFN→softmax reinterpretation).
 
-## **2.4 Titans Architectures (Three Variants)**
+## 2.4 Titans Architectures (Three Variants)
 
 All Titans have **three components**:
 
@@ -110,28 +110,28 @@ Retrieve memory → concatenate with persistent memory → feed into attention �
 
 ![image.png](image_2.png)
 
-# **3. Novelty**
+# 3. Novelty
 
-## **3.1. Memory Structure**
+## 3.1. Memory Structure
 
 - Titans introduce a **long-term memory (LMM)** that can learn and store information across **millions of tokens**.
 - This memory is a **deep, learnable module**, not just a matrix or KV-cache.
 - Three designs (MAL) show flexible ways to combine long-term memory with short-term attention.
 
-## **3.2. Memory Update**
+## 3.2. Memory Update
 
 - LMM learns **during inference**, using a simple idea: **more surprising tokens are written more strongly.**
 - Updates use **momentum** (past surprise + current surprise) for stability.
 - A **forget gate** decides how much old memory to remove to avoid overflow.
 
-## **3.3. Memory Retrieval**
+## 3.3. Memory Retrieval
 
 - LMM learns a **key → value** mapping, acting like a smart, compressing KV-cache.
 - The model retrieves long-term information when needed and mixes it with short-term attention (SWA).
 
 # 4. More Details
 
-## **4.1. What is M?**
+## 4.1. What is M?
 
 **M is a learnable function** (an MLP) that stores long-term information.
 
@@ -154,7 +154,7 @@ M is a single neural function used for both **retrieving** (q→memory output) a
 
 </aside>
 
-## **4.2. What does M do during RETRIEVAL?**
+## 4.2. What does M do during RETRIEVAL?
 
 Retrieval input: **query**
 
@@ -181,7 +181,7 @@ So during retrieval:
 
 Here, all the knowledge is **compressed inside the MLP weights**.
 
-## **4.3. What does M do during UPDATE?**
+## 4.3. What does M do during UPDATE?
 
 Update input: **key**
 
@@ -227,9 +227,9 @@ So during update:
 
 This is exactly like writing to a KV-cache — except the cache is a **learnable neural network** that can compress, forget, and generalize.
 
-## **4.4. What role does M play?**
+## 4.4. What role does M play?
 
-### **Role 1: long-term storage**
+### Role 1: long-term storage
 
 M learns from (k,v) pairs:
 
@@ -239,7 +239,7 @@ $$
 
 This is how it **stores** information.
 
-### **Role 2: long-term retrieval**
+### Role 2: long-term retrieval
 
 M responds to queries:
 
