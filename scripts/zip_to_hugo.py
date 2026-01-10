@@ -1,6 +1,6 @@
 import os
 import re
-from urllib.parse import unquote, urlparse
+from urllib.parse import unquote
 import zipfile
 import shutil
 import datetime
