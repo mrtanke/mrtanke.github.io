@@ -57,14 +57,6 @@ Improved workflow efficiency by automating batch record generation with Python s
 
 ## Selected Projects
 
-**[Adaptive Differential Attention](https://github.com/mrtanke/adaptive-differential-attention)**
-
-A controlled study of Differential Transformer attention, comparing layer-wise, head-wise, token-wise, and token+head-wise differential coefficients under the same Transformer architecture. On TinyStories, all Differential Attention variants improved perplexity over standard attention, while finer-grained coefficients showed no clear additional benefit in this setting.
-
-**[FinPRM](https://github.com/yehmhnn/finPRM)**
-
-A step-level process verification study for numerical reasoning on FinQA using Qwen2.5-Math-PRM-7B, comparing QLoRA domain adaptation with retrieved in-context demonstrations. QLoRA substantially improved verification performance, reaching 0.9421 test Macro-F1, while retrieval provided limited additional benefit in this setup.
-
 **DINO-WM Representation Study**
 
 A representation study on latent world models, analyzing how different visual encoders affect action-conditioned prediction and planning under a fixed DINO-WM-style backbone.
